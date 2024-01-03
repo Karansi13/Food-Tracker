@@ -295,11 +295,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: initial;
-    height: 50vh;
-    width: 32%;
-    margin-left: 128%;
+    height: 54vh;
+    width: 40%;
+    margin-left: 102%;
     margin-top: -5vh;
-    clip-path: circle(85% at 100% 60%);
+    clip-path: circle(95% at 100% 60%);
 }
 
 .phone-img {
