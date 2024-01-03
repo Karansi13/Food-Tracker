@@ -290,17 +290,16 @@
 }
 
 .home-plate {
-  background-image: url("images&logo/plate-img.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: initial;
-  height: 30vh;
-  width: 26%;
-  margin-left: 116%;
-  margin-top: -5vh;
-  clip-path: circle(55% at 100% 55%);
-  background-position-x: left 55px;
+    background-image: url(images&logo/plate-img.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: initial;
+    height: 50vh;
+    width: 32%;
+    margin-left: 128%;
+    margin-top: -5vh;
+    clip-path: circle(85% at 100% 60%);
 }
 
 .phone-img {
@@ -506,6 +505,68 @@ height: 50%;
 
 .comp-logo{
     padding: 0 20px;
+}
+
+.add{
+height: 80vh;
+width: 100%;
+    background-color: #5ab582;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding: 2vw; */
+}
+
+.add-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 30%;
+}
+.add-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1vw;
+}
+.add-text p{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 7vh;
+}
+
+.re-signup{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 10vw;
+    margin-top: 6vh;
+    font-size: 1.3rem;
+    background-color: 
+    #FFEB81;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+.add-right{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 0 3vw;
+}
+.add-img{
+    height: 60vh;
+}
+.add-img img{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 
