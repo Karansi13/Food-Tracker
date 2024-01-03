@@ -1,35 +1,94 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: azure;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  padding: 2vw;
+}
 
-nav{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-   }
-   nav a{
-    color:black;
-    text-decoration: none;
-    margin: 0 15px;
-   }
-   a:hover{
-    background-color: blue;
-   }
-   #logo{
-    margin-right: auto;
-   }
-   #sign-up-signin{
-    margin-left: auto;
-   }
+#navigation {
+  color: black;
+  text-decoration: none;
+  margin: 1vw 0 1vw 2vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navigation a {
+  font-size: 1.1rem;
+  margin: 1vw;
+  text-decoration: none;
+  color: black;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+  height: 10vh;
+  width: 7vw;
+}
+.logo-name {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  gap: 20px;
+  height: 10vh;
+  width: auto;
+}
+#sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 120, 34, 0.758);
+  border-radius: 30px;
+  height: 5vh;
+  width: 7vw;
+}
 
+#sign-up:hover {
+  cursor: pointer;
+  background-color: rgba(225, 161, 109, 0.758);
+}
+#sign-up a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+#sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 5vh;
+  width: 7vw;
+  border-radius: 30px;
+}
+#sign-in a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
 
-.home-pg{
+/* .home-pg{
+    position: relative;
     padding: 1.5vw;
     display: flex;
     justify-content: flex-start;
@@ -108,14 +167,198 @@ nav{
 }
 
 .home-plate{
+    position: absolute;
     background-image: url("plate-img.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: initial;
     height: 30vh;
-    width: 10%;
-    margin-left: 90%;
+    width: 26%;
+    margin-left: 116%;
     clip-path: circle(55% at 100% 55%);
     background-position-x: left 55px;
+    margin-top: -17vh;
+}
+
+.home-right{
+    margin: 0 1.5vw;
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+} */
+
+.home-pg {
+  position: relative;
+  padding: 1.5vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #5ab582;
+  height: 80vh;
+  width: 100%;
+  clip-path: polygon(49% 100%, 100% 88%, 100% 0, 0 0, 0 88%);
+}
+
+.home-left {
+  margin: 0 1.5vw;
+  height: 50vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.home-right {
+  margin: 0 1.5vw;
+  height: 50vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.home-text1 {
+  height: 15vh;
+  width: 50%;
+  margin: 0.5vw 2vw;
+}
+.home-text1 span {
+  font-size: 2vw;
+  color: #fff;
+}
+.home-text1 span .bold {
+  font-weight: 900;
+}
+.home-text1 span .light {
+  font-weight: 400;
+}
+
+.home-text2 {
+  height: 13vh;
+  width: 50%;
+  margin: 0.5vw 2vw;
+}
+.home-text2 span p {
+  font-size: 1.3rem;
+  color: #4c0f01;
+  font-weight: 300;
+  line-height: 2vw;
+}
+
+.home-download {
+  height: 10vh;
+  width: 60%;
+  margin: 1vw 0 1vw 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.apple {
+  height: 100%;
+  width: 50%;
+  background: url(https://assets.mynetdiary.com/images/app-store-badge.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.playstore {
+  height: 100%;
+  width: 50%;
+  background: url(https://assets.mynetdiary.com/images/google-play-badge.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-plate {
+  background-image: url("plate-img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: initial;
+  height: 30vh;
+  width: 26%;
+  margin-left: 116%;
+  margin-top: -17vh;
+  clip-path: circle(55% at 100% 55%);
+  background-position-x: left 55px;
+}
+
+.phone-img {
+  position: absolute;
+  height: 105vh;
+  width: 30%;
+  top: 20vh;
+  left: 35vw;
+}
+.phone-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.rating {
+  height: 10vh;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 3vw;
+}
+
+.rating-heading {
+  height: 5vh;
+  width: 100%;
+  padding: 0 2vw;
+}
+
+.rating-heading .rev1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #46618a;
+}
+
+.rating-heading .rev2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #46618a;
+}
+
+.rev-secction {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 1vw 2vw;
+}
+.rev-axpple {
+  font-size: 1.1rem;
+  width: 19%;
+  height: 5vh;
+}
+.rev-android {
+    /* margin-left: 1vw; */
+  width: 20%;
+}
+.fa-apple {
+  color: #46618a;
+}
+.fa-star {
+  color: #46618a;
+}
+
+.fa-regular {
+  color: #46618a;
+}
+
+.fa-android {
+  color: #46618a;
 }
