@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar {
@@ -43,6 +48,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logo-name p{
+    color: darkgreen;
 }
 #register {
   display: flex;
@@ -191,6 +199,9 @@
     flex-direction: column;
 } */
 
+.Home{
+    height: 140vh;
+}
 .home-pg {
   position: relative;
   padding: 1.5vw;
@@ -279,7 +290,7 @@
 }
 
 .home-plate {
-  background-image: url("plate-img.png");
+  background-image: url("images&logo/plate-img.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,7 +298,7 @@
   height: 30vh;
   width: 26%;
   margin-left: 116%;
-  margin-top: -17vh;
+  margin-top: -5vh;
   clip-path: circle(55% at 100% 55%);
   background-position-x: left 55px;
 }
@@ -352,7 +363,7 @@
   color: #46618a;
 }
 .fa-star {
-  color: #46618a;
+  color: gold;
 }
 
 .fa-regular {
@@ -361,4 +372,211 @@
 
 .fa-android {
   color: #46618a;
+}
+
+.text{
+    /* text-align: center; */
+    position: relative;
+    bottom: -35vh;
+    font-size: 2rem;
+    font-weight: 555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 2px;;
+    background-color: rgb(255, 69, 69);
+    width: 80%;
+    margin: 0 130px;
+}
+.line1{
+    height: 2px;
+    background-color: rgb(255, 69, 69);
+}
+
+.Achievement{
+    margin-top: 10vh;
+}
+.topic{
+    text-align: center;
+    color: rgb(30, 153, 229);
+    font-size: xx-large;
+    padding: 20px;
+    margin: 5vh;
+}
+.row {
+display: flex;
+justify-content: space-around;
+margin: 5vh 0;
+padding: 3vw;
+}
+
+.image-column {
+text-align: center;
+width: 40%;
+}
+
+.image-column img {
+max-width:50%;
+height: 50%;
+}
+.achieve{
+    font-family: sans-serif;
+    font-size: x-large;
+    padding: 4px;
+    color: rgb(30, 153, 229);
+}
+.des{
+    padding: 4px;
+    font-size: large;
+}
+
+
+.Cards{
+    margin-top: 10vh;
+    height: auto;
+}
+.cards-box {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+
+.cards-title{
+    margin-bottom: 7vh;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2vh;
+    color: #6fc4e9;
+}
+
+.card {
+  height: 60vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  color: #3c6678;
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1em;
+  color: #3c6678;
+  margin-bottom: 8px;
+}
+
+.card-description {
+    color: #3c6678;
+}
+
+
+
+
+.Companies{
+    margin: 5vh 0;
+}
+
+.comp{
+    font-size: 3em;
+    color: #6fc4e9;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.company-logo{
+    display: flex;
+    padding: 45px 80px 0px 80px;
+    justify-content: center;
+}
+
+.comp-logo{
+    padding: 0 20px;
+}
+
+
+.footer-lower{
+    background-color: #d9d9d9;
+    height: auto ;
+    padding-top: 5vh;
+}
+
+.footer-lower-cont{
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 30vw;
+}
+
+.footer-lower-logos{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 35vw;
+    padding: 3vh;
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+}
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+}
+
+.sheild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+}
+.copyright{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1.5vw;
+    background-color: #d9d9d9;
 }
